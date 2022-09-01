@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+* {
+    font-family: vazir;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+    list-style-type: none;
+    border-right: 1px solid #e4e4e5;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+    padding: 0.5rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav li {
+    padding: .75rem;
+    margin: .5rem;
+    border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+li:hover {
+    /* color: teal; */
+    background-color: #fff;
+    cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active {
+    color: teal;
+    background-color: #fff;
+}
+.home {
+    width: max-content;
+    max-height: 100vh;
+    border-left: 1px solid #e4e4e5;
+    padding: 1rem;
+    overflow: scroll;
+}
+nav ul {
+    border: none;
+    background-color: #e4e4e5;
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    border-radius: 10px;
+}
+ul.documents , .account > ul{
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul ul {
+    margin: 0.5rem;
+}
+.context-menu {
+    position: absolute;
+    padding: 1rem 4rem;
+    background-color: whitesmoke;
+    z-index: 1;
+    border: 1px solid #e4e4e5;
+    border-radius: 10px;
+    margin: 0.2rem;
+}
+i.fa {
+    padding: 0.5rem;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+table * {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+.ul-content {
+    display: flex;
+    border: none;
+}
+tbody {
+    margin: 1rem;
+}
+tfoot {
+    margin: 1rem 2rem;
 }
